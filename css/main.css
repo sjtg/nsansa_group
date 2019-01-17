@@ -1,0 +1,141 @@
+/*!
+ * Start Bootstrap - Half Slider (https://startbootstrap.com/template-overviews/half-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
+ */
+
+
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.carousel {
+	height: auto;
+
+   overflow:auto;
+
+}
+
+.carousel-item {
+overflow:hidden;
+  height: 80vh;
+  
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+ 
+ 
+}
+
+
+@media screen and (max-height: 1000px) {
+.carousel-item {
+overflow:hidden;
+height: 85vh;
+
+}}
+
+/*.carousel-item {
+  overflow:hidden;
+  width: 100%;
+  height: 20vh;
+  min-height: 580px ;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+*/
+
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 375px) {
+  body {
+    .carousel-item {
+  overflow:hidden;
+  width: 100%;
+  height: 65vh;
+  min-height: 580px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  }
+}
+
+
+.carousel-caption {
+   top: 64%;
+   width: 100%;
+   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slideTitle {
+	margin-left: -8%;
+	opacity:0.8;
+	Background-color: rgba(0, 60, 255, 0.486); 
+	color: #ffffff; 
+	font-size:4.5vmax; 
+}
+
+.slidesubTitle {
+	margin-left: -8%;
+	opacity:0.8;
+	Background-color: grey; 
+	color: #ffffff; 
+	font-size:3.8vmin;
+}
+
+/* Arrow Down */
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
